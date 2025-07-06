@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PINZYU OFFICIAL - Portofolio & Pembayaran</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Segoe+UI&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0d0f1a, #1a1d2e);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 3em;
+      background: linear-gradient(to right, #00d4ff, #7afff0);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: 'Orbitron', sans-serif;
+    }
+
+    header p {
+      font-size: 1em;
+      color: #ccc;
+      margin-top: 10px;
+    }
+
+    .notice {
+      text-align: center;
+      margin: 10px 20px 30px;
+      font-size: 1em;
+      background: rgba(255, 255, 255, 0.05);
+      border-left: 4px solid #00d4ff;
+      padding: 10px;
+      border-radius: 8px;
+      animation: slideUp 1.2s ease;
+    }
+
+    .payment-section {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+      animation: fadeInUp 0.6s ease forwards;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      max-width: 90px;
+      margin-bottom: 10px;
+      filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.3));
+    }
+
+    .number {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+
+    .name {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+
+    .qris img {
+      max-width: 220px;
+      margin-top: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(255,255,255,0.2);
+    }
+
+    .contact {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 1em;
+    }
+
+    .contact a {
+      color: #00e1ff;
+      text-decoration: none;
+      display: block;
+      margin: 5px 0;
+      transition: 0.3s ease;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px 20px;
+      margin-top: 40px;
+      background: #0b0c15;
+      font-family: 'Orbitron', sans-serif;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0;} to {opacity: 1;}
+    }
+
+    @keyframes slideUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @keyframes fadeInUp {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2em;
+      }
+      .card img {
+        max-width: 70px;
+      }
+      .qris img {
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>PINZYU OFFICIAL</h1>
+    <p>Portofolio & Metode Pembayaran</p>
+  </header>
+
+  <div class="notice">
+    🔒 <strong>MOHON DI CEK NAMA TUJUAN</strong> dan <strong>KIRIM BUKTI TRANSFER</strong> untuk menghindari <strong>PENIPUAN / SCAM</strong>.
+  </div>
+
+  <section class="payment-section">
+    <div class="card">
+      <img src="https://logodownload.org/wp-content/uploads/2021/04/dana-logo-0.png" alt="DANA">
+      <div class="number">0852-2655-2283</div>
+      <div class="name">A/N: Alvin Andrianto</div>
+    </div>
+    <div class="card">
+      <img src="https://1000logos.net/wp-content/uploads/2021/06/Gopay-Logo.png" alt="GoPay">
+      <div class="number">0852-2655-2283</div>
+    </div>
+    <div class="card">
+      <img src="https://seeklogo.com/images/O/ovo-logo-429CE5A99B-seeklogo.com.png" alt="OVO">
+      <div class="number">0852-2655-2283</div>
+    </div>
+    <div class="card qris">
+      <h3>QRIS Pembayaran</h3>
+      <img src="https://pomf2.lain.la/f/f2a2p4ph.jpg" alt="QRIS">
+    </div>
+  </section>
+
+  <section class="contact">
+    <h3>Contact Owner:</h3>
+    <a href="https://wa.me/6285226552283" target="_blank">📱 WhatsApp: 0852-2655-2283</a>
+    <a href="https://whatsapp.com/channel/0029VakIoqH5vKA2pGfC890J" target="_blank">📢 Channel: PINZYU OFFICIAL</a>
+  </section>
+
+  <footer>
+    © COPYRIGHT BY PINZYU OFFICIAL
+  </footer>
+
+</body>
+</html>
